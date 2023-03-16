@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-purple: rgba(115, 63, 200, 1);
+  --bg-grey: rgba(72, 85, 106, 1);
+  --bg-white: rgba(255, 255, 255, 1);
+  --bg-blue: rgba(25, 32, 45, 1);
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #ecf2f8;
+  padding: 71px 24px;
+  font-family: "Barlow Semi Condensed";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main{
+    display: grid;
+    grid-template-columns: auto;
+    column-gap: 30px;
+    row-gap: 24px;
+}
+.card {
+  padding: 26px 32px 32px 32px;
+  border-radius: 8px;
+}
+.purple {
+  background-color: var(--bg-purple);
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top 0 right 24px;
+}
+.grey {
+  background-color: var(--bg-grey);
+}
+.white {
+  background-color: var(--bg-white);
+}
+.blue {
+  background-color: var(--bg-blue);
+}
+.border{
+    border: 2px solid var(--bg-purple);
+}
+.person {
+  display: flex;
+  align-items: center;
+  column-gap: 17px;
+}
+.hero {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+.name {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 13px;
+  color: #ffffff;
+}
+.educate {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 11px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-top: 18px;
+}
+.description {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #cfcfcf;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+  margin-top: 16px;
+}
+/* another is the class of white background card */
+.another {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #48556a;
+}
+.any, .another-name, .another-board{
+    color: #48556A;
+}
+.bootcamp{
+    margin-top: 40px;
+}
+@media (min-width: 1440px) {
+    body{
+        padding: 164px;
+    }
+    .main{
+        grid-template-columns: repeat(4, 255px);
+    }
+    .purple{
+        background-position: top 0 right 80px;
+        grid-column: 1 / 2 span;
+        
+    }
+    .blue{
+        grid-column: 2 / 4;
+    }
+    .whittle{
+        grid-row: 1 / 2 span;
+        grid-column: 4 / 4
+    }
+    .bootcamp{
+        margin-top: 16px;
+    }
+}
